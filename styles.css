@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Teko:300,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 
+body{
+    background-color: black;
+}
 
 a{
     color: white !important;
+    text-decoration: none !important;
 }
 
 p{
     margin: 0;
+    color: white;
 }
 
 section{
@@ -19,6 +24,10 @@ header{
     width:100%;
     height:100vh;
     position: relative;
+}
+
+#home{
+    background-image: linear-gradient(rgb(0, 0, 0, 0) 80%, 90%, black 99%);
 }
 
 video {
@@ -149,6 +158,12 @@ video {
     text-shadow: 1px 1px #000000 !important;
 }
 
+/* .boxers {
+    max-height: 90px;
+    max-width: 90px;
+    filter: invert(.35) drop-shadow(1px 1px 1px  rgb(0, 0, 0));
+} */
+
 .btn {
     width: 100px;
     padding: 5px 0 !important;
@@ -175,6 +190,61 @@ video {
 .btn:hover{
     color:goldenrod !important;
 }
+
+/* SECTION CSS */
+.section-heading h4{
+    text-transform:uppercase;
+    color: white;
+    line-height: 0;
+    font-family: 'Teko', sans-serif;
+    font-weight:300;
+    letter-spacing: 1px;
+    padding-bottom:5px;
+}
+
+.section-heading h1{
+    font-family: 'Teko', sans-serif;
+    color: goldenrod;
+    font-weight: bold;
+}
+
+.gloves {
+    /* display: none; */
+    max-height: 90px;
+    max-width: 90px;
+    filter: invert(1) drop-shadow(1px 1px 1px  rgb(0, 0, 0));
+}
+
+/* COACH SECTION */
+
+.coach img{
+    height:25rem;
+    width:auto;
+    
+}
+.coach h1{
+    font-family: 'Teko', sans-serif;
+    color: goldenrod;
+    font-weight: bold;
+}
+
+.img-holder {
+    border: 7px solid goldenrod;
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+.img-holder img {
+    transform: translate(40px, 40px);
+    position: relative;
+    z-index: -1;
+  }
+.message {
+    font-style:italic;
+    margin-top:65px;
+}
+
+
 
 @media (min-width: 576px) {
     .navbar-brand{
@@ -265,7 +335,7 @@ video {
     .hero-animation::before{
         content:"";
         position: absolute;
-        margin-left:0.525em;
+        margin-left:0.55em;
         /* left:0; */
         bottom: -3px;
         background-color: goldenrod;
