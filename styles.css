@@ -61,9 +61,9 @@ video {
 }
 
 .logo{
-    display: none;
-    max-height: 90px;
-    max-width: 90px;
+    /* display: none; */
+    max-height: 100px;
+    max-width: 100px;
     filter: invert(1) drop-shadow(1px 1px 1px  rgb(0, 0, 0));
 }
 .hamburger-menu{
@@ -247,6 +247,7 @@ video {
 
 
 @media (min-width: 576px) {
+    
     .navbar-brand{
         max-width: 150px;
     }
