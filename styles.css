@@ -105,7 +105,6 @@ section{
     font-family: "Montserrat";
     font-weight:900;
     color: white;
-    /* color: #C39E6D; */
     text-shadow: 1.5px 1.5px black;
     text-transform: uppercase;
 }
@@ -120,13 +119,14 @@ section{
 }
 
 #hero-slider .hero-slider-marketing {
-    position: absolute;
+    position: relative;
     z-index: 2;
     text-align: center;
     color: #fff;
-    top: 42%;
-    left: 0;
-    right: 0;
+    top: 40%;
+    /* left: 0;
+    right: 0; */
+    margin: 0 auto;
     margin: -100px auto 0;
 }
 
@@ -150,30 +150,46 @@ section{
 }
 
 .gym-logo {
-    /* margin: 0 2rem; */
     position: relative;
     margin: 0 auto;
-    /* left:46%; */
     align-items: center;
-    /* border: 3px solid black; */
-    /* padding: 15px 10px 7px; */
-    max-height: 175px;
-    max-width: 175px;
-    filter:drop-shadow(1px 1px 1px  rgb(0, 0, 0));
-    /* text-align: center;
-    letter-spacing: 2px; */
+    max-height: 200px;
+    max-width: 200px;
+    filter:drop-shadow(1.5px 1.5px 1.5px  rgb(0, 0, 0));
 }
 
+.vl {
+    position:relative;
+    left:50%;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    border-left: 2px solid #C39E6D;
+    height: 70px;
+}
+
+.dot {
+    left: 0.1%;
+    height: 8px;
+    width: 8px;
+    background-color: #C39E6D;
+    border-radius: 50%;
+    display:block;
+    position: relative;
+    margin: 0 auto;
+  }
 
 .btn {
-    margin-top:1.5rem;
+    margin-top:1.75rem;
     padding: 5px 0 !important;
     border-radius: 25px;
-    border: 2px solid #c39e6da3;
+    border: 3px solid #c39e6da3;
     position: relative;
     overflow: hidden;
     font-size: 2rem;
-    width: 140px;
+    width: 180px;
+    /* background-color: #C39E6D; */
+    filter:drop-shadow(1px 1px 1px  rgb(0, 0, 0));
 
 }
 
@@ -192,6 +208,14 @@ section{
     left:100%;
 }
 
+/* COACH SECTION */
+.coach h1{
+    font-size:7rem;
+    font-family:"Montserrat";
+    font-weight:700;
+    text-transform: uppercase;
+    color:#C39E6D
+}
 
 @media (min-width: 576px) {
     
@@ -214,7 +238,6 @@ section{
     .logo{
         display: block;
         margin-left:45rem;
-        /* margin-right:0; */
     }
 
     header > .container{
