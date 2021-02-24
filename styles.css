@@ -36,17 +36,14 @@ section{
 }
 
 .logo{
-    /* margin-right:80px !important; */
-    margin-left:45rem !important;
     margin-bottom:0.5rem;
-    /* border: 3px solid black; */
     max-height: 60px;
     max-width: 60px;
     filter: invert(1) drop-shadow(1px 1px 1px  rgb(0, 0, 0));
 }
 .hamburger-menu{
     position:fixed;
-    top: 25px;
+    top: 0px;
     right: 15px;
     width: 50px;
     height: 50px;
@@ -127,7 +124,7 @@ section{
     z-index: 2;
     text-align: center;
     color: #fff;
-    top: 45%;
+    top: 42%;
     left: 0;
     right: 0;
     margin: -100px auto 0;
@@ -155,7 +152,9 @@ section{
 .gym-logo {
     /* margin: 0 2rem; */
     position: relative;
-    left:46%;
+    margin: 0 auto;
+    /* left:46%; */
+    align-items: center;
     /* border: 3px solid black; */
     /* padding: 15px 10px 7px; */
     max-height: 175px;
@@ -165,19 +164,6 @@ section{
     letter-spacing: 2px; */
 }
 
-button {
-    cursor: pointer;
-    background: #c39e6d7b;
-    color: #fff;
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 1.25rem 3rem;
-    border: none;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-family: 'Roboto', 'Helvetica', 'Sans-serif';
-    letter-spacing: 3px;
-}
 
 .btn {
     margin-top:1.5rem;
@@ -187,7 +173,8 @@ button {
     position: relative;
     overflow: hidden;
     font-size: 2rem;
-    
+    width: 140px;
+
 }
 
 .btn::before{
@@ -206,8 +193,6 @@ button {
 }
 
 
-
-
 @media (min-width: 576px) {
     
     .navbar-brand{
@@ -217,20 +202,19 @@ button {
 
 
     .hamburger-menu{
-        top: 35px;
-        right: 25px;
+        top: 0px;
+        right: 0px;
     }
 }
 
-@media (min-width: 768px){
-    .btn{
-        width: 140px;
-    }
-}
 
-@media (min-width: 992px){
+@media (min-width: 1430px){
+
+    
     .logo{
         display: block;
+        margin-left:45rem;
+        /* margin-right:0; */
     }
 
     header > .container{
