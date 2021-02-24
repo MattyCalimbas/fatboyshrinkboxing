@@ -26,36 +26,10 @@ section{
     padding: 60px 0;
 }
 
-/* Header */
-/* header{
-    width:100%;
-    height:100vh;
-    position: relative;
-    background-image: url(images/ken.jpg), linear-gradient( rgb(65, 66, 70),  rgb(65,66,90, 1));
-    background-image: url(images/ken.jpg);
-    background-blend-mode: overlay;
-    background-size:cover;
-} */
-
-/* #home{
-    background-image: linear-gradient(rgb(0, 0, 0, 0) 80%, 90%, black 99%);
-} */
-
-
 .navigation-bar {
    background-color:rgba(0, 0, 0, 0.5);
    z-index:100;
 }
-
-
-/* .navbar-brand{
-    position: absolute;
-    width:100%;
-    max-width: 100px;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-} */
 
 .navbar-brand:hover{
     opacity: .8;
@@ -64,8 +38,10 @@ section{
 .logo{
     /* margin-right:80px !important; */
     margin-left:45rem !important;
-    max-height: 100px;
-    max-width: 100px;
+    margin-bottom:0.5rem;
+    /* border: 3px solid black; */
+    max-height: 60px;
+    max-width: 60px;
     filter: invert(1) drop-shadow(1px 1px 1px  rgb(0, 0, 0));
 }
 .hamburger-menu{
@@ -121,10 +97,10 @@ section{
     transform: scale(1);
 }
 .nav-link{
-    font-family: 'Roboto', san-serif;
-    font-size: 1.6rem;
-    font-weight: 500px;
+    font-family: 'Lato', san-serif;
+    font-size: 1.3rem;
     text-shadow: 2px 2px #000000;
+    text-transform: uppercase;
 }
 
 #hero-slider h1{
@@ -139,7 +115,7 @@ section{
 
 #hero-slider .hero-slide-item {
     position: relative;
-    height: 895px;
+    height: 100vh;
     width:100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -151,7 +127,7 @@ section{
     z-index: 2;
     text-align: center;
     color: #fff;
-    top: 50%;
+    top: 45%;
     left: 0;
     right: 0;
     margin: -100px auto 0;
@@ -176,6 +152,18 @@ section{
     width:33px;
 }
 
+.gym-logo {
+    /* margin: 0 2rem; */
+    position: relative;
+    left:46%;
+    /* border: 3px solid black; */
+    /* padding: 15px 10px 7px; */
+    max-height: 175px;
+    max-width: 175px;
+    filter: invert(1) drop-shadow(1px 1px 1px  rgb(0, 0, 0));
+    /* text-align: center;
+    letter-spacing: 2px; */
+}
 
 button {
     cursor: pointer;
@@ -192,7 +180,9 @@ button {
 }
 
 .btn {
+    margin-top:1.5rem;
     padding: 5px 0 !important;
+    border-radius: 25px;
     border: 2px solid #c39e6da3;
     position: relative;
     overflow: hidden;
@@ -215,9 +205,7 @@ button {
     left:100%;
 }
 
-.btn:hover{
-    color:goldenrod !important;
-}
+
 
 
 @media (min-width: 576px) {
