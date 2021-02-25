@@ -6,6 +6,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -208,63 +209,62 @@ section{
 
 /* COACH SECTION */
 .coach h1{
-    font-size:7rem;
+    font-size:5rem;
     font-family:"Montserrat";
     font-weight:700;
     text-transform: uppercase;
-    color:#C39E6D
+    color:#fff;
 }
 
-.coach-info h1{
-    font-size: 2rem;
+.coach h4{
+    font-size:2rem;
+    font-family:"Montserrat";
+    font-weight:600;
+    text-transform: uppercase;
+    color:#fff;
 }
 
-.coach-info-item{
-    height: 50rem;
-    max-width:40rem;
-    margin: 25px !important;
+#coach .container {
+    max-width: 1100px;
+    margin: 0 auto;
     position: relative;
-    transform-style: preserve-3d;
-}
-.coach-info-item::before{
-    content: "";
-    position: absolute;
-    left: 0; right: 0;
-    top: 0; bottom: 0;
-    background: rgba(0,0,0,.5);
-    z-index: -1;
 }
 
-.coach-info-item::after{
-    content:"";
-    position: absolute;
-    top:2%;
-    left:2%;
-    width:100%;
-    height:100%;
-    background:#C39E6D;
-    transform: translateZ(-1px);
+#coach .flex {
+    display: flex;
+    justify-content: space-between;
 }
 
-.experience {
-    background-image: url("images/experience2.jpg");
-    background-position: center;
-    background-size: cover;
+#coach .box {
+    width: 30%;
+    margin-top:5rem;
 }
 
-.teaching {
-    background-image: url("images/teaching.jpg");
-    background-position: center;
-    background-size: cover;
-}
 
-.weight-loss {
-    background-image: url("images/loss.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
+#coach .box > img {
+    width: 100%;
+  }
+  
+#coach .box .feature-info-container {
+    position: relative;
+  }
+  
+#coach .box .icon {
+    position: relative;
+    margin: 0 auto;
+    background: #C39E6D;
+    border-radius: 45px;
+    top: -35px;
+    width: 88px;
+    height: 88px;
+    line-height: 83px;
+    text-align: center;
+  }
+  
+ #coach .box .icon .img {
+    vertical-align: middle;
+    color:white;
+  }
 
 @media (min-width: 576px) {
     
@@ -280,6 +280,21 @@ section{
     }
 }
 
+@media (max-width: 767px){
+    #coach .flex {
+        display: block;
+      }
+  
+    #coach .flex .box {
+        margin: 0 auto;
+        width: 100% !important;
+        margin-top: 3rem;
+      }
+  
+    #coach .flex .box:first-child {
+        margin-top: 0;
+      }
+}
 
 @media (min-width: 1430px){
 

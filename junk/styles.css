@@ -351,3 +351,49 @@ video {
         transform: scalex(1);
     }
 }
+
+/* .coach-info-item{
+    height: 50rem;
+    max-width:40rem;
+    margin: 25px !important;
+    position: relative;
+    transform-style: preserve-3d;
+}
+.coach-info-item::before{
+    content: "";
+    position: absolute;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    background: rgba(0,0,0,.5);
+    z-index: -1;
+}
+
+.coach-info-item::after{
+    content:"";
+    position: absolute;
+    top:2%;
+    left:2%;
+    width:100%;
+    height:100%;
+    background:#C39E6D;
+    transform: translateZ(-1px);
+}
+
+.experience {
+    background-image: url("images/experience2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.teaching {
+    background-image: url("images/teaching.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.weight-loss {
+    background-image: url("images/loss.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
