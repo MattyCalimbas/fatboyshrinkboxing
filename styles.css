@@ -105,7 +105,7 @@ section{
     font-family: "Montserrat";
     font-weight:900;
     color: white;
-    text-shadow: 1.5px 1.5px black;
+    text-shadow: 2px 2px black;
     text-transform: uppercase;
 }
 
@@ -124,8 +124,6 @@ section{
     text-align: center;
     color: #fff;
     top: 40%;
-    /* left: 0;
-    right: 0; */
     margin: 0 auto;
     margin: -100px auto 0;
 }
@@ -216,6 +214,57 @@ section{
     text-transform: uppercase;
     color:#C39E6D
 }
+
+.coach-info h1{
+    font-size: 2rem;
+}
+
+.coach-info-item{
+    height: 50rem;
+    max-width:40rem;
+    margin: 25px !important;
+    position: relative;
+    transform-style: preserve-3d;
+}
+.coach-info-item::before{
+    content: "";
+    position: absolute;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    background: rgba(0,0,0,.5);
+    z-index: -1;
+}
+
+.coach-info-item::after{
+    content:"";
+    position: absolute;
+    top:2%;
+    left:2%;
+    width:100%;
+    height:100%;
+    background:#C39E6D;
+    transform: translateZ(-1px);
+}
+
+.experience {
+    background-image: url("images/experience2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.teaching {
+    background-image: url("images/teaching.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.weight-loss {
+    background-image: url("images/loss.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 @media (min-width: 576px) {
     
