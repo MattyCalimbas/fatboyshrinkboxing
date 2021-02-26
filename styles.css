@@ -97,7 +97,7 @@ section {
     opacity: 1;
     transform: scale(1);
 }
-.nav-link{
+.navigation-bar .nav-link{
     font-family: 'Lato', san-serif;
     font-size: 1.3rem;
     text-shadow: 2px 2px #000000;
@@ -486,7 +486,7 @@ section {
   }
 
   .testimonial::before {
-      
+
   }
   
   @media (max-width: 767px) {
@@ -633,12 +633,12 @@ section {
         margin-right: 0;
     }
 
-    .nav-list .nav-link{
+    .navigation-bar .nav-list .nav-link{
         position: relative;
         padding: 0;
     }
 
-    .nav-list .nav-link::before{
+    .navigation-bar .nav-list .nav-link::before{
         content:"";
         position: absolute;
         left: 0;
@@ -651,7 +651,7 @@ section {
         transition: transform 650ms;
     }
 
-    .nav-list .nav-link:hover::before{
+    .navigation-bar .nav-list .nav-link:hover::before{
         transform: scaleX(1);
     }
 }
