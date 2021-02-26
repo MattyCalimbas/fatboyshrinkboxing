@@ -484,6 +484,10 @@ section {
       height: 60px;
       font-size: 20px;
   }
+
+  .testimonial::before {
+      
+  }
   
   @media (max-width: 767px) {
       .testimonial6 .testi6 .nav-link {
