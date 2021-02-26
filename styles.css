@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
 * {
     outline:none;
+
 }
 
 
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    
 }
 
 body{
@@ -260,6 +263,22 @@ section {
     border-left: 2px solid #C39E6D;
     height: 90px;
 }
+.journey{
+    width:100%;
+    position:relative;
+}
+
+.journey::before{
+    content:"";
+    position: absolute;
+    left:0;
+    bottom:-15rem;
+    width:100%;
+    height:4.7rem;
+    background: url("images/wave-small.png") center no-repeat;
+    background-size: cover;
+
+}
 
 #journey h2{
     font-size:3rem;
@@ -364,7 +383,7 @@ section {
 	/* text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000; */
 }
 .carousel-indicators {
-	bottom: -40px;
+	bottom: 1rem;
 }
 .carousel-indicators li, .carousel-indicators li.active {
 	width: 12px;
@@ -384,6 +403,15 @@ section {
 	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
 }
 
+/* MEDIA QUERIES */
+@media screen and (min-width: 470px){
+    .journey::before{
+        height: 9.4rem;
+        background: url("images/wave-medium.png");
+        background-size: cover;
+
+    }
+}
 
 
 @media (min-width: 576px) {
@@ -398,6 +426,10 @@ section {
         top: 0px;
         right: 0px;
     }
+}
+
+@media (min-width: 576px){
+
 }
 
 @media (max-width: 767px){
@@ -415,6 +447,16 @@ section {
         margin-top: 0;
       }
 }
+
+@media screen and (min-width: 470px){
+    .journey::before{
+        height: 22.7rem;
+        background: url("images/wave-large.png");
+        background-size: cover;
+
+    }
+}
+
 
 @media (min-width: 1430px){
 
@@ -452,7 +494,7 @@ section {
     }
 
     .nav-item{
-        margin: 0 15px;
+        margin: 0 10px;
     }
 
     .nav-item:last-child{
