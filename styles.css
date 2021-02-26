@@ -346,27 +346,16 @@ section {
 	height: auto;
 	margin: 0 auto;
 	padding: 5px;
-	/* border: 1px solid #ddd; */
-	/* border-radius: 50%; */
 }
 .carousel .img-box img {
 	width: 100%;
 	height: 100%;
     margin-bottom: 2rem;
-	/* display: block;
-	border-radius: 50%; */
 }
 .carousel .journey {
 	padding: 30px 0 10px;
 }
-/* .carousel .overview {	
-	font-style: italic;
-} */
 
-/* .carousel .overview b {
-	text-transform: uppercase;
-	color: #7AA641;
-} */
 .carousel-control-prev, .carousel-control-next {
 	width: 40px;
 	height: 40px;
@@ -380,7 +369,6 @@ section {
 	position: absolute;
 	display: inline-block;
 	color: #C39E6D;
-	/* text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000; */
 }
 .carousel-indicators {
 	bottom: 1rem;
@@ -473,11 +461,6 @@ section {
     opacity: 1;
   }
   
-  /* .testimonial6 .btn-danger {
-      background: #ff4d7e !important;
-      border: 1px solid #ff4d7e !important;
-  } */
-  
   .testimonial6 .btn-md {
       padding: 18px 0px;
       width: 60px;
@@ -485,33 +468,17 @@ section {
       font-size: 20px;
   }
 
-  .testimonial::before {
-
-  }
+.testimonial::before {
+    content:"";
+    position: absolute;
+    left:0;
+    bottom:-15rem;
+    width:100%;
+    height:4.7rem;
+    background: url("images/wave-small-reversed.png") center no-repeat;
+    background-size: cover;
+}
   
-  @media (max-width: 767px) {
-      .testimonial6 .testi6 .nav-link {
-      margin: 0px 0px -2px 0;
-      padding: 10px;
-      }
-      .testimonial6 .testi6 {
-      -webkit-box-orient: horizontal !important;
-      -webkit-box-direction: normal !important;
-      -webkit-flex-direction: row !important;
-      -ms-flex-direction: row !important;
-      flex-direction: row !important;
-      border-right: 0px solid rgba(120, 130, 140, 0.13);
-      border-bottom: 1px solid rgba(120, 130, 140, 0.13);
-      margin-bottom: 40px;
-      }
-      .testimonial6 .testi6 .nav-link img {
-      width: 40px;
-      }
-      .testimonial6 .testi6 .nav-link.active {
-              border-right: 0px solid #2cdd9b;
-              border-bottom: 3px solid #2cdd9b;
-      }
-  }
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 470px){
@@ -521,6 +488,11 @@ section {
         background-size: cover;
 
     }
+    .testimonial::before {
+        height:9.4rem;
+        background: url("images/wave-medium-reversed.png") center no-repeat;
+        background-size: cover;
+    }
 }
 
 
@@ -529,18 +501,12 @@ section {
     .navbar-brand{
         max-width: 150px;
     }
-
-
-
     .hamburger-menu{
         top: 0px;
         right: 0px;
     }
 }
 
-@media (min-width: 576px){
-
-}
 
 @media (max-width: 767px){
     #coach .flex {
@@ -586,6 +552,11 @@ section {
         background: url("images/wave-large.png");
         background-size: cover;
 
+    }
+    .testimonial::before {
+        height:22.7rem;
+        background: url("images/wave-large-reversed.png") center no-repeat;
+        background-size: cover;
     }
 }
 
