@@ -481,9 +481,9 @@ section {
 
 /* STUDIO SECTION */
 #studio{
-    height: 1000px;
+    height: 1200px;
     width:100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/experience2.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/experience2.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
@@ -502,7 +502,12 @@ section {
     color:#fff;
     text-shadow: 2px 2px black;
 }
-  
+
+.video{
+    position:relative;
+    left:30rem;
+    top:25rem;
+}
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 470px){
