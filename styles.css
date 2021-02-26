@@ -403,6 +403,112 @@ section {
 	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
 }
 
+/* TESTIMONIAL SECTION */
+#testimonials {
+    background-color: white;
+    position: relative;
+    top:8rem;
+}
+
+#testimonials h1{
+    font-size:5rem;
+    font-family:"Montserrat";
+    font-weight:700;
+    text-transform: uppercase;
+    color:#C39E6D;
+    text-shadow: 1px 1px black;
+}
+
+.testimonial6 {
+    font-family: "Montserrat", sans-serif;
+    color: #8d97ad;
+    font-weight: 300;
+  }
+  
+  .testimonial6 h1,
+  .testimonial6 h2,
+  .testimonial6 h3,
+  .testimonial6 h4,
+  .testimonial6 h5,
+  .testimonial6 h6 {
+    color: #3e4555;
+  }
+  
+  .testimonial6 .font-weight-medium {
+    font-weight: 500;
+  }
+  
+  .testimonial6 h5 {
+      line-height: 22px;
+      font-size: 18px;
+  }
+  
+  .testimonial6 .subtitle {
+    color: #8d97ad;
+    line-height: 24px;
+      font-size: 16px;
+  }
+  
+  .testimonial6 .testi6 {
+    border-right: 1px solid rgba(120, 130, 140, 0.13);
+  }
+  
+  .testimonial6 .testi6 .nav-link {
+    border-radius: 0px;
+    margin: 8px -2px 8px 0;
+  }
+  
+  .testimonial6 .testi6 .nav-link img {
+    width: 70px;
+    opacity: 0.5;
+  }
+  
+  .testimonial6 .testi6 .nav-link.active {
+    background: transparent;
+    color: #8d97ad;
+    border-right: 3px solid #C39E6D;
+  }
+  
+  .testimonial6 .testi6 .nav-link.active img {
+    opacity: 1;
+  }
+  
+  /* .testimonial6 .btn-danger {
+      background: #ff4d7e !important;
+      border: 1px solid #ff4d7e !important;
+  } */
+  
+  .testimonial6 .btn-md {
+      padding: 18px 0px;
+      width: 60px;
+      height: 60px;
+      font-size: 20px;
+  }
+  
+  @media (max-width: 767px) {
+      .testimonial6 .testi6 .nav-link {
+      margin: 0px 0px -2px 0;
+      padding: 10px;
+      }
+      .testimonial6 .testi6 {
+      -webkit-box-orient: horizontal !important;
+      -webkit-box-direction: normal !important;
+      -webkit-flex-direction: row !important;
+      -ms-flex-direction: row !important;
+      flex-direction: row !important;
+      border-right: 0px solid rgba(120, 130, 140, 0.13);
+      border-bottom: 1px solid rgba(120, 130, 140, 0.13);
+      margin-bottom: 40px;
+      }
+      .testimonial6 .testi6 .nav-link img {
+      width: 40px;
+      }
+      .testimonial6 .testi6 .nav-link.active {
+              border-right: 0px solid #2cdd9b;
+              border-bottom: 3px solid #2cdd9b;
+      }
+  }
+
 /* MEDIA QUERIES */
 @media screen and (min-width: 470px){
     .journey::before{
@@ -435,17 +541,39 @@ section {
 @media (max-width: 767px){
     #coach .flex {
         display: block;
-      }
+    }
   
     #coach .flex .box {
         margin: 0 auto;
         width: 100% !important;
         margin-top: 3rem;
-      }
+    }
   
     #coach .flex .box:first-child {
         margin-top: 0;
-      }
+    }
+      
+    .testimonial6 .testi6 .nav-link {
+        margin: 0px 0px -2px 0;
+        padding: 10px;
+    }
+    .testimonial6 .testi6 {
+        -webkit-box-orient: horizontal !important;
+        -webkit-box-direction: normal !important;
+        -webkit-flex-direction: row !important;
+        -ms-flex-direction: row !important;
+        flex-direction: row !important;
+        border-right: 0px solid rgba(120, 130, 140, 0.13);
+        border-bottom: 1px solid rgba(120, 130, 140, 0.13);
+        margin-bottom: 40px;
+    }
+    .testimonial6 .testi6 .nav-link img {
+        width: 40px;
+    }
+    .testimonial6 .testi6 .nav-link.active {
+        border-right: 0px solid #C39E6D;
+        border-bottom: 3px solid #C39E6D;
+    }
 }
 
 @media screen and (min-width: 470px){
@@ -501,12 +629,12 @@ section {
         margin-right: 0;
     }
 
-    .nav-link{
+    .nav-list .nav-link{
         position: relative;
         padding: 0;
     }
 
-    .nav-link::before{
+    .nav-list .nav-link::before{
         content:"";
         position: absolute;
         left: 0;
@@ -519,7 +647,7 @@ section {
         transition: transform 650ms;
     }
 
-    .nav-link:hover::before{
+    .nav-list .nav-link:hover::before{
         transform: scaleX(1);
     }
 }
