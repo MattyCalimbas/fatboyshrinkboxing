@@ -23,7 +23,7 @@ p{
     color: white;
 }
 
-section{
+section {
     padding: 60px 0;
 }
 
@@ -238,16 +238,59 @@ section{
 #coach .box {
     width: 30%;
     margin-top:5rem;
+    
 }
-
 
 #coach .box > img {
     width: 100%;
-  }
+    border: 10px solid #C39E6D;
+}
   
 #coach .box .feature-info-container {
     position: relative;
-  }
+    
+}
+
+.vl-2 {
+    position:relative;
+    left:50%;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    border-left: 2px solid #C39E6D;
+    height: 90px;
+}
+
+#journey h2{
+    font-size:3rem;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    position: relative;
+    margin: 30px 0 60px;
+}
+
+#journey h2::after {
+    content: "";
+    width: 100px;
+    position: absolute;
+    margin: 0 auto;
+    height: 3px;
+    background: #C39E6D;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+}
+
+#journey h3{
+    font-size: 2rem;
+    color: #fff;
+    font-family: "Lato";
+    font-weight: 400;
+
+}
   
 #coach .box .icon {
     position: relative;
@@ -259,12 +302,89 @@ section{
     height: 88px;
     line-height: 83px;
     text-align: center;
-  }
+}
   
  #coach .box .icon .img {
     vertical-align: middle;
     color:white;
-  }
+}
+.col-center {
+	margin: 0 auto;
+	float: none !important;
+}
+.carousel {
+	padding: 0 70px;
+}
+.carousel .carousel-item {
+	color: #999;
+	font-size: 14px;
+	text-align: center;
+	overflow: hidden;
+	min-height: 700px;
+}
+.carousel .carousel-item .img-box {
+	max-width: 500px;
+	height: auto;
+	margin: 0 auto;
+	padding: 5px;
+	/* border: 1px solid #ddd; */
+	/* border-radius: 50%; */
+}
+.carousel .img-box img {
+	width: 100%;
+	height: 100%;
+    margin-bottom: 2rem;
+	/* display: block;
+	border-radius: 50%; */
+}
+.carousel .journey {
+	padding: 30px 0 10px;
+}
+/* .carousel .overview {	
+	font-style: italic;
+} */
+
+/* .carousel .overview b {
+	text-transform: uppercase;
+	color: #7AA641;
+} */
+.carousel-control-prev, .carousel-control-next {
+	width: 40px;
+	height: 40px;
+	margin-top: -20px;
+	top: 50%;
+	background: none;
+}
+.carousel-control-prev i, .carousel-control-next i {
+	font-size: 68px;
+	line-height: 42px;
+	position: absolute;
+	display: inline-block;
+	color: #C39E6D;
+	/* text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000; */
+}
+.carousel-indicators {
+	bottom: -40px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 12px;
+	height: 12px;
+	margin: 1px 3px;
+	border-radius: 50%;
+	border: none;
+}
+.carousel-indicators li {	
+	background: #999;
+	border-color: transparent;
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+    margin-bottom: 5rem;
+}
+.carousel-indicators li.active {	
+	background: #555;		
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+
+
 
 @media (min-width: 576px) {
     
