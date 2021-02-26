@@ -478,6 +478,30 @@ section {
     background: url("images/wave-small-reversed.png") center no-repeat;
     background-size: cover;
 }
+
+/* STUDIO SECTION */
+#studio{
+    height: 1000px;
+    width:100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/experience2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.studio {
+    position:relative;
+    top:20rem;
+}
+
+.studio h1 {
+    font-size:4.5rem;
+    font-family:"Montserrat";
+    font-weight:700;
+    text-transform: uppercase;
+    color:#fff;
+    text-shadow: 2px 2px black;
+}
   
 
 /* MEDIA QUERIES */
@@ -545,6 +569,7 @@ section {
         border-bottom: 3px solid #C39E6D;
     }
 }
+
 
 @media screen and (min-width: 470px){
     .journey::before{
